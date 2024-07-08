@@ -3,11 +3,10 @@
 import { Category } from "@/models";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import mutateCategory from "./mutateCategory";
 
 type CategoryItemProps = {
   category: Category;
