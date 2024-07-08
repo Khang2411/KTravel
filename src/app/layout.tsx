@@ -4,9 +4,6 @@ import { Box } from "@mui/material";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Agent, setGlobalDispatcher } from "undici";
-
-setGlobalDispatcher(new Agent({ connect: { timeout: 60_000 } }));
 
 const inter = Inter({ subsets: ["latin"] });
 
